@@ -2,7 +2,7 @@ name: C++ CI
 
 on:
   push:
-    branches: [lab4]
+    branches: [main]
 
 permissions:
   contents: write
