@@ -52,7 +52,7 @@ int main()
     std::cout << "\nMyVector<int> with default allocator: ";
     MyVector<int> vec1;
 
-    // Заполнение с дефолтным аллокатором
+    // Заполнение с дефолтным аллокатором .
     for (int i = 0; i < 10; ++i)
     {
         vec1.push_back(i);
