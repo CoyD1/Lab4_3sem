@@ -3,7 +3,7 @@
 #include "headers/myAllocator.h"
 #include "headers/myvector.h"
 
-// Вычисление факториала
+// Вычисление факториала f
 int factorial(int n)
 {
     if (n == 0)
