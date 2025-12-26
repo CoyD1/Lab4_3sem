@@ -21,7 +21,7 @@ set(CPACK_OUTPUT_FILE_PREFIX "${CMAKE_BINARY_DIR}/package")
 
 
 add_executable(lab4 main.cpp)
-target_include_directories(lab4 PRIVATE headers)
+target_include_directories(lab4 PUBLIC ${CMAKE_SOURCE_DIR}/headers)
 
 set(CPACK_PACKAGE_NAME "Lab4")
 set(CPACK_OUTPUT_FILE_PREFIX "${CMAKE_BINARY_DIR}/package")
@@ -30,7 +30,7 @@ if(WIN32)
   set(CPACK_GENERATOR "ZIP")
 elseif(UNIX)
   set(CPACK_GENERATOR "DEB")
-  set(CPACK_DEBIAN_PACKAGE_MAINTAINER "nas97 <nas97@tpu.ru>")
+  set(CPACK_DEBIAN_PACKAGE_MAINTAINER "apranovich <apranovich@tpu.ru>")
 endif()
 
 install(TARGETS lab4 DESTINATION bin)
